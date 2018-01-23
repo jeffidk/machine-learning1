@@ -15,8 +15,8 @@ git add < name >: if untracked, start tracking a file or directory; if tracked a
 git reset HEAD < name >: unstage a changed file
 
 git commit -m "message": commits everything that has been staged with a message
--a -m "message": automatically stages any modified files, then commits
---amend -m "new message": fixes the message from the last commit
+* -a -m "message": automatically stages any modified files, then commits
+* --amend -m "new message": fixes the message from the last commit
 
 git push origin master: pushes your commits to the master branch of the origin
 
@@ -29,35 +29,35 @@ git merge upstream/master: merge that branch into the working branch
 git status: check which files have been modified and/or staged since the last commit
 
 git diff: shows the diff for files that are modified but not staged
---staged: shows the diff for files that are staged but not committed
+* --staged: shows the diff for files that are staged but not committed
 
 # Viewing the commit history
 git log: shows the detailed commit history
--1: only shows the last 1 commit
--p: shows the line diff for each commit
--p --word-diff: shows the word diff for each commit
---stat: shows stats instead of diff details
---name-status: shows a simpler version of stat
---oneline: just shows commit comments
+* -1: only shows the last 1 commit
+* -p: shows the line diff for each commit
+* -p --word-diff: shows the word diff for each commit
+* --stat: shows stats instead of diff details
+* --name-status: shows a simpler version of stat
+* --oneline: just shows commit comments
 
 gitk: open a visual commit browser
 
 # Managing branches
 git branch: shows a list of local branches
-< branchname >: create a new branch with that name
--d < branchname >: delete a branch
--v: show the last commit on each local branch
--a: show local and remote branches
--va: show the last commit on each local and remote branch
---merged: list which branches are already merged into the working branch (safe to delete)
---no-merged: list which branches are not merged into the working branch
+* < branchname >: create a new branch with that name
+* -d < branchname >: delete a branch
+* -v: show the last commit on each local branch
+* -a: show local and remote branches
+* -va: show the last commit on each local and remote branch
+* --merged: list which branches are already merged into the working branch (safe to delete)
+* --no-merged: list which branches are not merged into the working branch
 
 git checkout < branchname >: switch the HEAD pointer to a different branch
--b < branchname >: create a new branch and switch to it
+* -b < branchname >: create a new branch and switch to it
 
 # Removing, deleting, and reverting files
 git rm < name >: deletes that file from the disk, then stages its deletion
---cached < name >: stops tracking a file, then stages its deletion (but does not delete it from the disk)
+* --cached < name >: stops tracking a file, then stages its deletion (but does not delete it from the disk)
 
 git mv < oldname > < newname >: renames the file on disk, then stages the deletion of the old name and addition of the new name
 
