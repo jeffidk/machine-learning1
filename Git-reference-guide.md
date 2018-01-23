@@ -67,4 +67,7 @@ git checkout -- < name >: revert a modified file on disk back to the last commit
 git init: initialize Git in an existing directory
 
 git config --list: shows your Git configuration
+
 touch .gitignore: create an empty .gitignore file
+
+git pull: synchronize local repo with Github
