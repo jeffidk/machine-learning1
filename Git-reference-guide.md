@@ -12,7 +12,7 @@ git remote show < handlename >: inspect a remote in detail
 # Tracking, committing, and pushing your changes
 git add < name >: if untracked, start tracking a file or directory; if tracked and modified, stage it for committing
 
-git reset HEAD < name >: unstage a changed file
+git reset HEAD < name >: unstage a changed file (remove < name > from git
 
 git commit -m "message": commits everything that has been staged with a message
 * -a -m "message": automatically stages any modified files, then commits
@@ -70,8 +70,7 @@ git config --list: shows your Git configuration
 
 touch .gitignore: create an empty .gitignore file
 
-git pull: synchronize local repo with Github
+git pull origin master: synchronize local repo with Github. git pull works also.
 
 git <git_command> -h : get help for git_command
 
-git reset HEAD <files> : remove <files> from git
