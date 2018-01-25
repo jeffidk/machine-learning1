@@ -73,3 +73,5 @@ touch .gitignore: create an empty .gitignore file
 git pull: synchronize local repo with Github
 
 git <git_command> -h : get help for git_command
+
+git reset HEAD <files> : remove <files> from git
