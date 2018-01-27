@@ -13,6 +13,7 @@ git remote show < handlename >: inspect a remote in detail
 git add < name >: if untracked, start tracking a file or directory; if tracked and modified, stage it for committing
 
 git reset HEAD < name >: unstage a changed file (remove < name > from git
+* --hard <hash number of previous version>: restore file to previous version
 
 git commit -m "message": commits everything that has been staged with a message
 * -a -m "message": automatically stages any modified files, then commits
