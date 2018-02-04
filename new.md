@@ -8,3 +8,4 @@ Here is some regular text
 [link to Google](http://www.google.com)
 
 more text
+added text on the branch feature
