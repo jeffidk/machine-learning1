@@ -71,7 +71,7 @@ git config --list: shows your Git configuration
 
 touch .gitignore: create an empty .gitignore file
 
-git pull origin master: synchronize local repo with Github. git pull works also.
+git pull origin master: synchronize local repo with Github. git pull works also. Equivalent to 1) git fetch, followed by 2) git merge origin/master.
 
 git <git_command> -h : get help for git_command
 
